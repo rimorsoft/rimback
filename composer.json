@@ -9,8 +9,7 @@
         "suin/php-rss-writer": "^1.6",
         "laravelcollective/html": "^5.5",
         "uxweb/sweet-alert": "^1.4",
-        "caffeinated/shinobi": "^3.1",
-        "consoletvs/charts": "^5.4"
+        "caffeinated/shinobi": "^3.1"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.1",
