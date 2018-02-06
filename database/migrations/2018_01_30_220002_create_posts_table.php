@@ -25,7 +25,7 @@ class CreatePostsTable extends Migration
             $table->mediumText('excerpt')->nullable();
             $table->text('body');
 
-            $table->enum('type', ['VIDEO', 'POST', 'PAGE', 'PRODUCT']); //page, post
+            $table->enum('type', config('rimback.posts.type')); //page, post
 
             $table->string('image')->nullable(); //url absolute
             $table->string('tooltip')->nullable();
@@ -35,10 +35,9 @@ class CreatePostsTable extends Migration
 
             $table->bigInteger('view')->default(0);
             $table->bigInteger('comment_count')->default(0);
-
+            $table->enum('comment_status', ['OPEN', 'CLOSED'])->default('OPEN');
 
             $table->enum('status', ['PUBLISHED', 'DRAFT', 'ARCHIVED'])->default('DRAFT');
-            $table->enum('comment', ['OPEN', 'CLOSED'])->default('OPEN');
             
             $table->string('meta_title', 128);
             $table->string('meta_description', 256)->nullable();
