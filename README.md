@@ -14,7 +14,7 @@ _Thank you very much_
 
 ## You want to contribute?
 
-Please see [here](https://rimorsoft.com/rimback#contributors) to see our code of conduct, and the process of sending a pull requests.
+Please see [here](https://rimorsoft.com/rimback) to see our code of conduct, and the process of sending a pull requests.
 
 ## Authors
 
@@ -25,19 +25,15 @@ _You can be here_
 
 _You can help with documentation, creation of themes, package incorporation, etc_
 
-## Our heroes
-
-List of all who contribute **with donation** [click here](https://rimorsoft.com/rimback#donations):
-
-* *[Rimorsoft Online](https://rimorsoft.com/)*
-
 ## License
 
 This project is under license (MIT).
 
-## Gratitude
+## Gratitude - Our heroes
 
 _Our community of web programmers **Rimorsoft Online**_
+
+* *[Rimorsoft Online](https://rimorsoft.com/)*
 
 ---
 _file v1.0_

@@ -1,6 +1,6 @@
 <?php
 
-namespace Rimorsoft\Rimback;
+namespace Rimorsoft\Rimback\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -13,7 +13,7 @@ class RimbackServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->loadRoutesFrom(__DIR__.'/../routes/rimback.php');
+        $this->loadRoutesFrom(__DIR__.'/../../routes/rimback.php');
     }
 
     /**
