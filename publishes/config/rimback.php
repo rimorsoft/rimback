@@ -13,3 +13,5 @@ return [
     'posts' => [
         'type' => ['VIDEO', 'POST', 'PAGE', 'PRODUCT'],
     ],
+
+];
