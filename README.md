@@ -1,6 +1,6 @@
 <img align="left" width="150" src="https://rimorsoft.com/asset/imagen/logo.png">
 
-# RimBack CMS
+RimBack CMS
 
 _CMS base for the community of web programmers Rimorsoft Online._
 
