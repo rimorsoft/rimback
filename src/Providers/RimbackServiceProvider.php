@@ -14,6 +14,7 @@ class RimbackServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->loadRoutesFrom(__DIR__.'/../../routes/rimback.php'); //Route Rimback
+        $this->loadMigrationsFrom(__DIR__.'/../../database/migrations');
 
         // File config
         $this->publishes([

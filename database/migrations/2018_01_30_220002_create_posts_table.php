@@ -20,10 +20,10 @@ class CreatePostsTable extends Migration
 
             //general
             $table->string('name');
-            $table->string('slug', 128)->unique();
+            $table->string('slug');
 
             $table->mediumText('excerpt')->nullable();
-            $table->text('body');
+            $table->longText('body');
 
             $table->enum('type', config('rimback.posts.type')); //page, post
 

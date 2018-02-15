@@ -2,8 +2,8 @@
 
 namespace Rimorsoft\Rimback\Http\Controllers;
 
-use Rimorsoft\Rimback\Entities\Setting;
 use Illuminate\Http\Request;
+use Rimorsoft\Rimback\Entities\Setting;
 
 class SettingController extends Controller
 {

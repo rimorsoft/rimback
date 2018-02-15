@@ -2,8 +2,8 @@
 
 namespace Rimorsoft\Rimback\Http\Controllers;
 
-use Rimorsoft\Rimback\Entities\Term;
 use Illuminate\Http\Request;
+use Rimorsoft\Rimback\Entities\Term;
 
 class TermController extends Controller
 {

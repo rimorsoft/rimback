@@ -2,8 +2,8 @@
 
 namespace Rimorsoft\Rimback\Http\Controllers;
 
-use Rimorsoft\Rimback\Entities\Comment;
 use Illuminate\Http\Request;
+use Rimorsoft\Rimback\Entities\Comment;
 
 class CommentController extends Controller
 {

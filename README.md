@@ -1,6 +1,9 @@
+<img align="left" width="150" src="https://rimorsoft.com/asset/imagen/logo.png">
 # RimBack CMS
 
 _CMS base for the community of web programmers Rimorsoft Online._
+
+---
 
 ## Starting
 
@@ -21,6 +24,7 @@ Please see [here](https://rimorsoft.com/rimback) to see our code of conduct, and
 _You can be here_
 
 * **Italo Morales** - *Founder of the project* - [italomoralesf](https://github.com/italomoralesf)
+* **Angel Cruz** - *developer* - [abr4xas](https://github.com/abr4xas)
 * **your name here**
 
 _You can help with documentation, creation of themes, package incorporation, etc_

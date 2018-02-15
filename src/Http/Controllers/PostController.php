@@ -2,8 +2,8 @@
 
 namespace Rimorsoft\Rimback\Http\Controllers;
 
-use Rimorsoft\Rimback\Entities\Post;
 use Illuminate\Http\Request;
+use Rimorsoft\Rimback\Entities\Post;
 
 class PostController extends Controller
 {

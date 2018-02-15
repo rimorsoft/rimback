@@ -4,28 +4,39 @@
     "keywords": ["laravel", "admin", "panel", "cms", "rimorsoft"],
     "type": "library",
     "require": {
-        "cviebrock/eloquent-sluggable": "^4.4",
         "creativeorange/gravatar": "^1.0",
         "suin/php-rss-writer": "^1.6",
         "laravelcollective/html": "^5.5",
         "uxweb/sweet-alert": "^1.4",
-        "caffeinated/shinobi": "^3.1"
+        "caffeinated/shinobi": "^3.1",
+        "spatie/laravel-sluggable": "^2.1"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.1",
         "phpunit/phpunit": "^6.5"
     },
     "license": "MIT",
-    "authors": [
-        {
-            "name": "Italo Morales F",
-            "email": "i@italomoralesf.com"
-        }
-    ],
-    "minimum-stability": "alpha",    
-    "autoload": { 
+    "authors": [{
+        "name": "Italo Morales F",
+        "email": "i@italomoralesf.com",
+        "role": "developer"
+    }, {
+        "name": "Angel Cruz",
+        "email": "me@abr4xas.org",
+        "homepage": "https://abr4xas.org/",
+        "role": "developer"
+    }],
+    "minimum-stability": "alpha",
+    "autoload": {
         "psr-4": {
             "Rimorsoft\\Rimback\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Rimorsoft\\Rimback\\CountriesServiceProvider"
+            ]
         }
     }
 }
