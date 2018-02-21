@@ -15,10 +15,16 @@ class RimbackServiceProvider extends ServiceProvider
     {
         $this->loadRoutesFrom(__DIR__.'/../../routes/rimback.php'); //Route Rimback
 
-        // File config
+        // File config Rimback
         $this->publishes([
             __DIR__.'/../../publishes/config/rimback.php' => config_path('rimback.php'),
         ]);
+
+        // Views Rimback
+        $this->loadViewsFrom(__DIR__.'/../../resources/views', 'rimback');
+
+        // Migrations Rimback
+        $this->loadMigrationsFrom(__DIR__.'/../../database/migrations');
     }
 
     /**
