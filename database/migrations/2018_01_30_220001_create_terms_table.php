@@ -19,9 +19,9 @@ class CreateTermsTable extends Migration
             $table->integer('parent_id')->default(0); 
 
             $table->enum('taxonomy', ['TAG', 'CATEGORY']);
-            $table->string('name', 64);
+            $table->string('name', 128);
             $table->string('slug', 128)->unique();
-            $table->string('body')->nullabled();
+            $table->string('body', 128)->nullabled();
 
             $table->timestamps();
         });

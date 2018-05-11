@@ -19,28 +19,28 @@ class CreatePostsTable extends Migration
             $table->integer('user_id')->unsigned();
 
             //general
-            $table->string('name');
-            $table->string('slug')->unique();
+            $table->string('name', 128);
+            $table->string('slug', 128)->unique();
 
             $table->text('excerpt')->nullable();
             $table->text('body');
 
             $table->enum('type', config('rimback.posts.type')); //page, post
 
-            $table->string('image')->nullable(); //url absolute
-            $table->string('tooltip')->nullable();
-            $table->string('alternative')->nullable();
+            $table->string('image', 128)->nullable(); //url absolute
+            $table->string('tooltip', 128)->nullable();
+            $table->string('alternative', 128)->nullable();
             
             $table->integer('parent_id')->default(0); 
 
             $table->bigInteger('view')->default(0);
-            $table->bigInteger('comment_count')->default(0);
-            $table->enum('comment_status', ['OPEN', 'CLOSED'])->default('OPEN');
-
-            $table->enum('status', ['PUBLISHED', 'DRAFT', 'ARCHIVED'])->default('DRAFT');
             
-            $table->text('meta_title');
-            $table->text('meta_description')->nullable();
+            $table->boolean('comment_status')->default(true);
+
+            $table->enum('status', ['PUBLISHED', 'DRAFT'])->default('DRAFT');
+            
+            $table->string('meta_title', 128);
+            $table->string('meta_description', 256)->nullable();
 
             $table->timestamps();
             
