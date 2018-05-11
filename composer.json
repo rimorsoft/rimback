@@ -1,18 +1,13 @@
 {
     "name": "rimorsoft/rimback",
     "description": "CMS base for the community of web programmers Rimorsoft Online.",
-    "keywords": ["laravel", "admin", "panel", "cms", "rimorsoft"],
+    "keywords": ["laravel", "admin", "panel", "cms", "rimorsoft", "italomoralesf"],
     "type": "library",
     "require": {
         "cviebrock/eloquent-sluggable": "^4.4",
-        "creativeorange/gravatar": "^1.0",
         "suin/php-rss-writer": "^1.6",
         "laravelcollective/html": "^5.5",
         "uxweb/sweet-alert": "^1.4"
-    },
-    "require-dev": {
-        "barryvdh/laravel-debugbar": "^3.1",
-        "phpunit/phpunit": "^6.5"
     },
     "license": "MIT",
     "authors": [

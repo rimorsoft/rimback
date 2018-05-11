@@ -17,7 +17,8 @@ class RimbackServiceProvider extends ServiceProvider
 
         // File config Rimback
         $this->publishes([
-            __DIR__.'/../../publishes/config/rimback.php' => config_path('rimback.php'),
+            __DIR__.'/../../publishes/config/rimback.php'      => config_path('rimback.php'),
+            __DIR__.'/../../publishes/resources/views/rimback' => resource_path('views'),
         ]);
 
         // Views Rimback

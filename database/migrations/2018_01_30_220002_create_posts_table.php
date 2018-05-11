@@ -20,9 +20,9 @@ class CreatePostsTable extends Migration
 
             //general
             $table->string('name');
-            $table->string('slug', 128)->unique();
+            $table->string('slug')->unique();
 
-            $table->mediumText('excerpt')->nullable();
+            $table->text('excerpt')->nullable();
             $table->text('body');
 
             $table->enum('type', config('rimback.posts.type')); //page, post
@@ -31,7 +31,7 @@ class CreatePostsTable extends Migration
             $table->string('tooltip')->nullable();
             $table->string('alternative')->nullable();
             
-            $table->integer('order')->default(0);
+            $table->integer('parent_id')->default(0); 
 
             $table->bigInteger('view')->default(0);
             $table->bigInteger('comment_count')->default(0);
@@ -39,8 +39,8 @@ class CreatePostsTable extends Migration
 
             $table->enum('status', ['PUBLISHED', 'DRAFT', 'ARCHIVED'])->default('DRAFT');
             
-            $table->string('meta_title', 128);
-            $table->string('meta_description', 256)->nullable();
+            $table->text('meta_title');
+            $table->text('meta_description')->nullable();
 
             $table->timestamps();
             

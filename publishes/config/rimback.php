@@ -10,8 +10,16 @@ return [
     |
     */
 
+    'appname' => 'Rimback - Rimorsoft Online',
+
+    'theme' => 'theme.lynda',
+
     'posts' => [
-        'type' => ['VIDEO', 'POST', 'PAGE', 'PRODUCT'],
+        'type' => ['POST', 'PAGE'],
+    ],
+
+    'namespace' => [
+        'controllers' => '\\Rimorsoft\\Rimback\\Http\\Controllers\\', //do not change
     ],
 
 ];
