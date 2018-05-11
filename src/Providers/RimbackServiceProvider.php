@@ -19,6 +19,7 @@ class RimbackServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/../../publishes/config/rimback.php'      => config_path('rimback.php'),
             __DIR__.'/../../publishes/resources/views/rimback' => resource_path('views'),
+            __DIR__.'/../../publishes/app/Http/Controllers'    => app_path('Http/Controllers'),
         ]);
 
         // Views Rimback
