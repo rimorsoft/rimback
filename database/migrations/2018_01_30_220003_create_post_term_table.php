@@ -21,11 +21,15 @@ class CreatePostTermTable extends Migration
             
             $table->timestamps();
 
-            $table->foreign('post_id')->references('id')->on('posts')
+            $table->foreign('post_id')
+                ->references('id')
+                ->on('posts')
                 ->onDelete('cascade')
                 ->onUpdate('cascade');
 
-            $table->foreign('term_id')->references('id')->on('terms')
+            $table->foreign('term_id')
+                ->references('id')
+                ->on('terms')
                 ->onDelete('cascade')
                 ->onUpdate('cascade');
         });

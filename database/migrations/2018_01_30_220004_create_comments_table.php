@@ -17,8 +17,8 @@ class CreateCommentsTable extends Migration
             $table->increments('id');
 
             $table->integer('parent_id')->default(0); 
-            $table->integer('user_id')->unsigned();
-            $table->integer('post_id')->unsigned()->nullable();
+            $table->unsignedInteger('user_id')->nullable();
+            $table->unsignedInteger('post_id')->nullable();
 
             $table->string('ip');
             $table->string('agent');
@@ -29,11 +29,15 @@ class CreateCommentsTable extends Migration
             $table->timestamps();
             
             //relation
-            $table->foreign('user_id')->references('id')->on('users')
+            $table->foreign('user_id')
+                ->references('id')
+                ->on('users')
                 ->onDelete('cascade')
                 ->onUpdate('cascade');
 
-            $table->foreign('post_id')->references('id')->on('posts')
+            $table->foreign('post_id')
+                ->references('id')
+                ->on('posts')
                 ->onDelete('cascade')
                 ->onUpdate('cascade');
         });

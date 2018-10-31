@@ -16,11 +16,11 @@ class CreateTermsTable extends Migration
         Schema::create('terms', function (Blueprint $table) {
             $table->increments('id');
 
-            $table->integer('parent_id')->default(0); 
+            $table->integer('parent_id')->nullable(); 
 
             $table->enum('taxonomy', ['TAG', 'CATEGORY']);
-            $table->mediumText('name', 64);
-            $table->mediumText('body')->nullabled();
+            $table->mediumText('name');
+            $table->mediumText('body')->nullable();
 
             $table->timestamps();
         });

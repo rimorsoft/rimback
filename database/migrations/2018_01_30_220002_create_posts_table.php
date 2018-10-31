@@ -16,7 +16,7 @@ class CreatePostsTable extends Migration
         Schema::create('posts', function (Blueprint $table) {
             $table->increments('id');
 
-            $table->integer('user_id')->unsigned();
+            $table->unsignedInteger('user_id')->nullable();
 
             //general
             $table->string('name');
@@ -39,8 +39,8 @@ class CreatePostsTable extends Migration
 
             $table->enum('status', ['PUBLISHED', 'DRAFT', 'ARCHIVED'])->default('DRAFT');
             
-            $table->string('meta_title', 128);
-            $table->string('meta_description', 256)->nullable();
+            $table->string('meta_title');
+            $table->string('meta_description')->nullable();
 
             $table->timestamps();
             
